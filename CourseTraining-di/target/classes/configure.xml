@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<bean name="javaTrainer" class="com.spring.CourseTraining_di.JavaTrainer">
+	<constructor-arg name="name" value="Rudresh"></constructor-arg>
+	</bean>
+
+	<bean name="webTrainer" class="com.spring.CourseTraining_di.WebTrainer">
+	<constructor-arg name="name" value="Bharath"></constructor-arg>
+	</bean>
+
+	<bean name="sqlTrainer" class="com.spring.CourseTraining_di.SqlTrainer">
+	<constructor-arg name="name" value="Siddesh"></constructor-arg>
+			</bean>
+
+</beans>
